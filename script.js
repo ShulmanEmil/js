@@ -9,10 +9,14 @@ let appData = {
   income: [],
   savings: false
 };
+for (let i = 0; i < 2; i++) {
+  let consumption = prompt('Введите обязательную статью расходов в этом месяце');
+  let willCost = prompt('Во сколько обойдется?');
 
-let consumption = prompt('Введите обязательную статью расходов в этом месяце');
-let willCost = prompt('Во сколько обойдется?');
-
-appData.expenses.consumption =  willCost;
+  if ( (typeof(consumption)) != null && (typeof(willCost)) != null ){
+  appData.expenses.consumption =  willCost;
+  }
+}
 
 alert( (appData.budget - appData.expenses.consumption) / 30 )
+
