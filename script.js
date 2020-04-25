@@ -41,7 +41,7 @@ function chooseOptExpenses {
     let willCost = prompt('Во сколько обойдется?');
   
     if ( (typeof(consumption)) != null && (typeof(willCost)) != null ){
-    appData.optionalExpenses.consumption =  willCost;
+    appData.optionalExpenses.i =  willCost;
     } else {                            
       console.log ("bad result");
       i--;
